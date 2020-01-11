@@ -35,23 +35,23 @@ t.pensize(2)
 t.speed(5)
 Bprev = 0
 
-C = degrees(js)
-ca = k * js
-bc = k * js * 2
-cosC = cos(js)
-ab = (ca ** 2 + bc ** 2 - 2*ca*bc*cosC) ** 0.5
-A = degrees(asin(bc * sin(js) / ab))
-A = A if cosC<0 else 180 - A
+# C = degrees(js)
+# ca = k * js
+# bc = k * js * 2
+# cosC = cos(js)
+# ab = (ca ** 2 + bc ** 2 - 2*ca*bc*cosC) ** 0.5
+# A = degrees(asin(bc * sin(js) / ab))
+# A = A if cosC<0 else 180 - A
+#
+# t.left(C)
+# t.forward(ca)
+#
+# t.left(180 - A)
+# t.forward(ab)
 
-t.left(C)
-t.forward(ca)
 
-t.left(180 - A)
-t.forward(ab)
-
-
-text.clear()
-text.write('A: {}, \n, ab: {}, \n, ca: {}'.format(t.heading(),ab,ca), font=("Arial", 20, "normal"))
+# text.clear()
+# text.write('A: {}, \n, ab: {}, \n, ca: {}'.format(t.heading(),ab,ca), font=("Arial", 20, "normal"))
 
 #
 # t.left(180 - A)
